@@ -1,0 +1,206 @@
+body {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 0;
+}
+
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    padding: 10px 20px;
+}
+.pesquisa input{
+    width: 300px;
+    padding: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.pesquisa button {
+    margin-left: 9px;
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+.pesquisa button:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+/* banner principal */
+.banner {
+width: 100%;
+max-height: 400px;
+height: 360px;
+background-size: cover;
+background-position: relative;
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding-bottom: 80px;
+}
+/* caixa do conteudo do banner */
+.banner-content {
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.4);
+    padding: 320px;
+    border-radius: 15px;
+}
+/* titulo do banner*/
+.banner-content h1 {
+    font-size: 150px;  
+    margin-bottom: auto;
+    margin-top: auto;
+  
+}
+/* texto do banner*/
+.banner-content p {
+    height: 50%;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* botão do banner */
+.banner-content button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+   
+}
+
+
+/* lista de produtos */
+#product-list {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    background-color: #f5f5f5;
+    margin: 11px;
+    padding: 20px;
+    left: 50px;
+    padding: 18px;
+    height: 390px;
+    margin: 17px;
+}
+
+.product-item{
+    /* estrutura */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    /*tamanho */
+    width: 100%;
+    min-width: 280px;
+    max-width: 280px;
+    height: 4px;
+    min-height: 610px;
+    /* espaçamento*/
+    padding: 0;
+    margin: 30px;
+    gap: 1px;
+    /* fundo*/
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    /* bordas */
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    border-radius: 16px;
+    /* sombras */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    /* alinhamento */
+    justify-content: flex-start;
+    align-items: stretch;
+
+    ;
+}
+
+.product-item:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+.product-item h3{
+    font-size: 16px;
+    height: 48px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+.product-item button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(242, 255, 0);
+    border: none;
+    padding: 10px 9px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+.product-price{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.product-item img{
+    object-fit: contain;
+    width: 100%;
+    height: 230px;
+    border-radius: 12px;
+}
+
+.product-description{
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    line-height: 1.4;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.product-shipping{
+    font-size: 14px;
+    color: #00a650;
+    margin-top: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-cupom{
+    font-size: 14px;
+    color: #ff0000;
+    margin-top: 6px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.final{
+    background:#f5f5f5;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #e5e5e5;
+}
