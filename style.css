@@ -99,14 +99,11 @@ padding-bottom: 80px;
     left: 50px;
     padding: 18px;
     height: 390px;
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
+    margin: 15px;
 }
 
 .product-item{
     /* estrutura */
-    flex:  1 1 250px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -135,16 +132,6 @@ padding-bottom: 80px;
     justify-content: flex-start;
     align-items: stretch;
 
-    ;
-}
-/* tamanho de tela para mobile */
-@media (max-width: 768px) {
-    .product-item {
-        max-width: 100%;
-    }
-    .pesquisa input {
-        width: 98%;
-    }
 }
 
 .product-item:hover {
