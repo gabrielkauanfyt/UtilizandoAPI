@@ -12,6 +12,7 @@ async function carregarProdutos() {
             const descricao = document.createElement('p');
             const avaliacao = document.createElement('p');
             const cupom = document.createElement('p');
+            const category = document.createElement ('p');
             const shippingP = document.createElement('p');
             const shipping = produto.price > 100 ? 'Frete grátis' : 'Frete: R$ 20,00';
             
@@ -22,6 +23,7 @@ async function carregarProdutos() {
             shippingP.classList.add("product-shipping");
 
             item.innerHTML = `
+            <p class="product-category">${produto.category}</p>
             <img src="${produto.image}" alt="${produto.title}" width="100">
             <h3>${produto.title}</h3>
             <p class="product-description">${produto.description}</p>
